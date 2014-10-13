@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin">
+
+               <TableRow>
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="@dimen/small_margin"
+                        android:visibility="gone"
+                        android:id="@+id/show_issue_image"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/small_margin">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/camera"
+                            android:id="@+id/take_issue_pic"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/small_margin"
+                            android:layout_gravity="center"
+                            android:text="Click the button"
+                            android:textSize="20dp"
+                            android:textColor="@android:color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="to take issue image"
+                            android:textSize="20dp"
+                            android:textColor="@android:color/white"/>
+
+                    </LinearLayout>
+
+               </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:text="Write the issue description"
+                android:textColor="@color/text_color"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:inputType="textMultiLine"
+                android:background="@android:color/white"
+                android:textColor="@color/text_color"
+                android:textCursorDrawable="@null"
+                android:gravity="top|left"
+                android:id="@+id/issue_desc"/>
+
+            <Button
+                android:layout_width="@dimen/button_min_width"
+                android:layout_height="@dimen/button_min_height"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:layout_gravity="center"
+                android:background="@color/button_color"
+                android:text="Report"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/button_textsize"
+                android:id="@+id/report_issue"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

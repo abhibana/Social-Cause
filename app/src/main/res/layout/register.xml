@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/small_padding"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" >
+
+                 <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/large_margin"
+                      android:layout_marginRight="@dimen/small_margin"
+                      android:src="@drawable/btrack"/>
+
+                 <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/medium_margin"
+                      android:text="Sign Up"
+                      android:textColor="@color/text_color"
+                      android:textSize="@dimen/big_text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_margin"
+                android:orientation="vertical">
+
+                <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/button_min_height"
+                   android:layout_gravity="left"
+                   android:layout_marginTop="@dimen/small_margin"
+                   android:paddingLeft="@dimen/small_padding"
+                   android:background="@drawable/abs__ab_transparent_dark_holo"
+                   android:textColor="@color/text_color"
+                   android:inputType="textEmailAddress"
+                   android:textCursorDrawable="@null"
+                   android:hint="Name"
+                   android:id="@+id/register_name"/>
+
+                <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="48dp"
+                   android:layout_marginTop="@dimen/small_margin"
+                   android:paddingLeft="@dimen/small_padding"
+                   android:background="@drawable/abs__ab_transparent_dark_holo"
+                   android:textColor="@color/text_color"
+                   android:inputType="textEmailAddress"
+                   android:textCursorDrawable="@null"
+                   android:hint="Email"
+                   android:id="@+id/register_email"/>
+
+                <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="48dp"
+                   android:layout_marginTop="@dimen/small_margin"
+                   android:paddingLeft="@dimen/small_padding"
+                   android:background="@drawable/abs__ab_transparent_dark_holo"
+                   android:textColor="@color/text_color"
+                   android:inputType="textPassword"
+                   android:textCursorDrawable="@null"
+                   android:hint="Password"
+                   android:id="@+id/register_password"/>
+
+                <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="48dp"
+                   android:layout_marginTop="@dimen/small_margin"
+                   android:paddingLeft="@dimen/small_padding"
+                   android:background="@drawable/abs__ab_transparent_dark_holo"
+                   android:textColor="@color/text_color"
+                   android:inputType="textPassword"
+                   android:textCursorDrawable="@null"
+                   android:hint="Retype Password"
+                   android:id="@+id/register_retype_password"/>
+
+                <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="48dp"
+                   android:layout_marginTop="@dimen/small_margin"
+                   android:paddingLeft="@dimen/small_padding"
+                   android:background="@drawable/abs__ab_transparent_dark_holo"
+                   android:textColor="@color/text_color"
+                   android:textCursorDrawable="@null"
+                   android:inputType="phone"
+                   android:hint="Contact Number"
+                   android:id="@+id/register_contact_no"/>
+
+                <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/button_min_height"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="@dimen/medium_margin"
+                   android:layout_marginBottom="@dimen/small_margin"
+                   android:background="@color/button_color"
+                   android:text="Register"
+                   android:textSize="@dimen/button_textsize"
+                   android:textColor="@android:color/white"
+                   android:id="@+id/register"/>
+
+             </LinearLayout>
+         </LinearLayout>
+    </ScrollView>
+ </LinearLayout>

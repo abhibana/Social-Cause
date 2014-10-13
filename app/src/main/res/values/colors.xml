@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name = "background"> #FFEEEEEE </color>
+    <color name = "button_color"> #FF4C4C4C </color>
+    <color name="text_color"> #FF2B2B2B </color>
+</resources>

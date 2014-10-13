@@ -1,0 +1,61 @@
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/switcher"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/issue_detail">
+
+        <ImageView
+            android:layout_width="@dimen/imageview_min_width"
+            android:layout_height="@dimen/imageview_min_height"
+            android:layout_margin="@dimen/small_margin"
+            android:layout_gravity="center"
+            android:id="@+id/issue_image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_margin"
+                android:text="Reported By : "
+                android:textSize="@dimen/small_text"
+                android:textColor="@color/text_color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_margin"
+                android:textSize="@dimen/small_text"
+                android:textColor="@color/text_color"
+                android:id="@+id/reported_by"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/small_text"
+            android:id="@+id/issue_desc"/>
+    </LinearLayout>
+
+
+
+</FrameLayout>
